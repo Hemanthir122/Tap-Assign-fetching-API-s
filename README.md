@@ -82,9 +82,13 @@ Built with **React (JSX), Vite, and Tailwind CSS** for fast performance and a cl
 ---
 
 <img width="1894" height="885" alt="image" src="https://github.com/user-attachments/assets/e61fe4ec-8f69-4a1b-88d3-886d5174b0b1" />
+                                        This is a Landing Page 
 <img width="1888" height="912" alt="image" src="https://github.com/user-attachments/assets/de11db05-a1be-471f-bc8c-536899628c69" />
+                                        This is a Actual *Geolocation API* Works
 <img width="1871" height="892" alt="image" src="https://github.com/user-attachments/assets/567e5b71-92e1-42bc-b5bd-51d6e658f9af" />
+                                        Here we can see *Canvas API*
 <img width="1882" height="970" alt="image" src="https://github.com/user-attachments/assets/bfa3f0a5-dc1d-4a42-a04d-17251ee607dd" />
+                                        Here we can see *Network Information API*
 
 
 
