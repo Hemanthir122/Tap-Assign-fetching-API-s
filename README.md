@@ -26,73 +26,89 @@ Built with **React (JSX), Vite, and Tailwind CSS** for fast performance and a cl
 
 ## 🌐 APIs Used and How They Work
 
-### 1️⃣ **Geolocation API**
-- **What it does:** Automatically retrieves the user's current latitude and longitude if the user does not manually enter a city.
-- **How it works in the app:**
-  - When the user clicks “Fetch My Weather” without entering a city, the app requests the user's location.
-  - The returned coordinates are used to fetch weather and AQI data accurately for the user's position.
+### 1️⃣ Geolocation API
+- **What it does:** Retrieves the user's current latitude and longitude if the user does not manually enter a city.
+- **How it works:** On clicking “Fetch My Weather” without entering a city, the app requests your location, which is then used to fetch accurate weather and AQI data.
 
 ---
 
-### 2️⃣ **Open-Meteo Weather API**
-- **Endpoint:**
-- **What it does:** Fetches:
-- Current temperature (`temperature_2m`).
-- Weather condition (`weather_code`).
-- Hourly temperature for the next 6 hours to visualize trends.
-- **How it works in the app:**
-- After receiving coordinates (either from Geolocation API or geocoded city), the app fetches weather data from this endpoint.
-- Displays the current temperature and readable weather condition.
-- Uses hourly temperature data to render a **Canvas-based line chart**.
+### 2️⃣ Open-Meteo Weather API
+- **What it does:** Fetches the current temperature, weather conditions, and hourly forecast for the next 6 hours to visualize trends.
+- **How it works:** After obtaining coordinates, the app fetches weather data to display the current temperature and readable conditions, and plots the hourly data in a **Canvas-based line chart**.
 
 ---
 
-### 3️⃣ **Open-Meteo Air Quality API**
-- **Endpoint:**
-- **What it does:** Fetches the **current Air Quality Index (AQI)** based on the US AQI standard.
-- **How it works in the app:**
-- Using coordinates, the app fetches current AQI data.
-- Displays AQI value with a color-coded badge.
-- Uses the AQI data to render a **Canvas-based circular AQI indicator** for quick visual insight.
+### 3️⃣ Open-Meteo Air Quality API
+- **What it does:** Fetches the current **Air Quality Index (AQI)**.
+- **How it works:** Using coordinates, the app retrieves AQI data, displays the AQI value with a color-coded badge, and uses it to render a **Canvas-based circular AQI indicator** for quick insight.
 
 ---
 
-### 4️⃣ **Open-Meteo Geocoding API**
-- **Endpoint:**
-- **What it does:** Converts a **city name into latitude and longitude**.
-- **How it works in the app:**
-- If the user enters a city in the search bar, the app sends a request to this API to obtain the latitude and longitude.
-- These coordinates are then used to fetch weather and AQI data accurately for the searched location.
+### 4️⃣ Open-Meteo Geocoding API
+- **What it does:** Converts a city name into latitude and longitude coordinates.
+- **How it works:** If a user enters a city, the app sends a request to obtain coordinates to fetch weather and AQI data accurately for the searched location.
 
 ---
 
-### 5️⃣ **Network Information API**
-- **What it does:** Detects whether the user is **online or offline**.
-- **How it works in the app:**
-- Displays an **offline banner at the top** of the app if the network connection is lost, ensuring user awareness about connectivity issues.
+### 5️⃣ Network Information API
+- **What it does:** Detects whether the user is online or offline.
+- **How it works:** Displays an **offline banner** when the user loses internet connection for clear user awareness.
 
 ---
 
-### 6️⃣ **Canvas API**
-- **What it does:** Enables the drawing of **custom graphics** within the app.
-- **How it works in the app:**
-- Draws a **line chart** displaying hourly temperature trends.
-- Renders a **circular AQI indicator** that visually represents the air quality level using colors and labels.
+### 6️⃣ Canvas API
+- **What it does:** Enables drawing custom graphics inside the app.
+- **How it works:** Used to draw:
+  - A **line chart** displaying hourly temperature trends.
+  - A **circular AQI indicator** that visually represents the air quality level using colors and labels.
 
 ---
 
-<img width="1894" height="885" alt="image" src="https://github.com/user-attachments/assets/e61fe4ec-8f69-4a1b-88d3-886d5174b0b1" />
-                                        This is a Landing Page 
-<img width="1888" height="912" alt="image" src="https://github.com/user-attachments/assets/de11db05-a1be-471f-bc8c-536899628c69" />
-                                        This is a Actual *Geolocation API* Works
-<img width="1871" height="892" alt="image" src="https://github.com/user-attachments/assets/567e5b71-92e1-42bc-b5bd-51d6e658f9af" />
-                                        Here we can see *Canvas API*
-<img width="1882" height="970" alt="image" src="https://github.com/user-attachments/assets/bfa3f0a5-dc1d-4a42-a04d-17251ee607dd" />
-                                        Here we can see *Network Information API*
+## 📸 Screenshots
 
+<p align="center">
+  <img width="900" alt="Landing Page" src="https://github.com/user-attachments/assets/e61fe4ec-8f69-4a1b-88d3-886d5174b0b1" />
+</p>
 
+<p align="center" style="font-size: 18px; font-weight: bold; padding: 10px;">
+  🚀 This is the Landing Page
+</p>
 
+---
 
+<p align="center">
+  <img width="900" alt="Geolocation API in Action" src="https://github.com/user-attachments/assets/de11db05-a1be-471f-bc8c-536899628c69" />
+</p>
 
+<p align="center" style="font-size: 18px; font-weight: bold; padding: 10px;">
+  📍 This demonstrates the <strong>Geolocation API</strong> in action
+</p>
 
+---
 
+<p align="center">
+  <img width="900" alt="Canvas API" src="https://github.com/user-attachments/assets/567e5b71-92e1-42bc-b5bd-51d6e658f9af" />
+</p>
+
+<p align="center" style="font-size: 18px; font-weight: bold; padding: 10px;">
+  🎨 Here you can see the <strong>Canvas API</strong> with a temperature line chart and AQI indicator
+</p>
+
+---
+
+<p align="center">
+  <img width="900" alt="Network Information API" src="https://github.com/user-attachments/assets/bfa3f0a5-dc1d-4a42-a04d-17251ee607dd" />
+</p>
+
+<p align="center" style="font-size: 18px; font-weight: bold; padding: 10px;">
+  🌐 This shows the <strong>Network Information API</strong> displaying offline status
+</p>
+
+---
+
+## ⚙️ Installation & Running Locally
+
+1️⃣ **Clone the repository:**
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
