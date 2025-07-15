@@ -32,35 +32,34 @@ Built with **React (JSX), Vite, and Tailwind CSS** for fast performance and a cl
 
 ---
 
-### 2️⃣ Open-Meteo Weather API
-- **What it does:** Fetches the current temperature, weather conditions, and hourly forecast for the next 6 hours to visualize trends.
-- **How it works:** After obtaining coordinates, the app fetches weather data to display the current temperature and readable conditions, and plots the hourly data in a **Canvas-based line chart**.
-
----
-
-### 3️⃣ Open-Meteo Air Quality API
-- **What it does:** Fetches the current **Air Quality Index (AQI)**.
-- **How it works:** Using coordinates, the app retrieves AQI data, displays the AQI value with a color-coded badge, and uses it to render a **Canvas-based circular AQI indicator** for quick insight.
-
----
-
-### 4️⃣ Open-Meteo Geocoding API
-- **What it does:** Converts a city name into latitude and longitude coordinates.
-- **How it works:** If a user enters a city, the app sends a request to obtain coordinates to fetch weather and AQI data accurately for the searched location.
-
----
-
-### 5️⃣ Network Information API
+### 2️⃣ Network Information API
 - **What it does:** Detects whether the user is online or offline.
 - **How it works:** Displays an **offline banner** when the user loses internet connection for clear user awareness.
 
 ---
 
-### 6️⃣ Canvas API
+### 3️⃣ Canvas API
 - **What it does:** Enables drawing custom graphics inside the app.
 - **How it works:** Used to draw:
   - A **line chart** displaying hourly temperature trends.
   - A **circular AQI indicator** that visually represents the air quality level using colors and labels.
+
+---
+### 4️⃣ Open-Meteo Weather API
+- **What it does:** Fetches the current temperature, weather conditions, and hourly forecast for the next 6 hours to visualize trends.
+- **How it works:** After obtaining coordinates, the app fetches weather data to display the current temperature and readable conditions, and plots the hourly data in a **Canvas-based line chart**.
+
+---
+
+### 5️⃣ Open-Meteo Air Quality API
+- **What it does:** Fetches the current **Air Quality Index (AQI)**.
+- **How it works:** Using coordinates, the app retrieves AQI data, displays the AQI value with a color-coded badge, and uses it to render a **Canvas-based circular AQI indicator** for quick insight.
+
+---
+
+### 6️⃣ Open-Meteo Geocoding API
+- **What it does:** Converts a city name into latitude and longitude coordinates.
+- **How it works:** If a user enters a city, the app sends a request to obtain coordinates to fetch weather and AQI data accurately for the searched location.
 
 ---
 
